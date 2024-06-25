@@ -1,0 +1,41 @@
+.hotel-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.hotel-card {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+.hotel-card h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+}
+
+.hotel-card p {
+  margin: 5px 0;
+}
+
+.hotel-card button {
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px 5px;
+  padding: 10px;
+  width: 120px;
+}
+
+.hotel-card button:hover {
+  background-color: #0056b3;
+}

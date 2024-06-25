@@ -1,0 +1,83 @@
+/* Filter.css */
+
+.filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  
+  .filter h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .filter-section {
+    flex: 1;
+    margin-right: 10px;
+    width: 100%;
+  }
+  
+  .filter-section div {
+    margin-bottom: 10px;
+  }
+  
+  .filter label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .filter select,
+  .filter input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  /* Estilos para los botones */
+  .filter-buttons {
+    display: flex;
+    justify-content: flex-end; /* Alineamos los botones a la derecha */
+    margin-top: 10px; /* Añadimos un margen superior */
+    width: 100%; /* Aseguramos que los botones ocupen todo el ancho */
+  }
+  
+  .filter-buttons button {
+    margin-left: 10px; /* Añadimos espacio entre los botones */
+    padding: 8px 15px; /* Ajustamos el padding de los botones */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .filter-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  @media (max-width: 600px) {
+    .filter {
+      flex-direction: column; /* Cambiamos a diseño de columna en pantallas pequeñas */
+      align-items: center; /* Centramos elementos en pantallas pequeñas */
+    }
+    
+    .filter-buttons {
+      justify-content: center; /* Centramos los botones en pantallas pequeñas */
+    }
+  }
+  

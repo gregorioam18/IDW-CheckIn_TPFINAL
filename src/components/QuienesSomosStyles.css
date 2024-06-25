@@ -1,0 +1,19 @@
+.quienes-somos-container{
+    margin: 4rem 6rem;
+    text-align: start;
+}
+
+.quienes-somos-container h1{
+    padding: 0.1rem;
+}
+
+.quienes-somos-container p{
+    padding: 0.5rem;
+}
+
+@media screen and (max-width: 850px){
+    .quienes-somos-container{
+        margin: 4rem 6rem;
+    }
+    
+}
