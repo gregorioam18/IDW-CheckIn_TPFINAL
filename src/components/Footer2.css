@@ -1,0 +1,23 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  
+  #root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+  }
+  
+  .main-content {
+    flex: 1; 
+  }
+  
+  .footer {
+    text-align: center;
+    padding: 1em;
+    background: #f1f1f1;
+    position: fixed; 
+    left: 0; right: 0; bottom: 0;
+  }

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Sidebar from './Sidebar';
 import './AdministradordeImagenes.css';
+import Footer from '../components/Footer2.js';
 
 const AdministradordeImagenes = ({ role }) => {
   const [selectedFile, setSelectedFile] = useState(null);
@@ -136,6 +137,7 @@ const AdministradordeImagenes = ({ role }) => {
             ))}
           </div>
         </div>
+        <Footer />
       </main>
     </div>
   );

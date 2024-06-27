@@ -4,6 +4,7 @@ import './RegistrarAlojamiento.css';
 import Sidebar from './Sidebar'; 
 import Modal from './Modal'; 
 import obtenerCiudadCoordenadas from './obtenerCiudadCoordenadas'; 
+import Footer from './Footer2';
 
 const RegistrarAlojamiento = () => {
   const navigate = useNavigate();
@@ -168,8 +169,10 @@ const RegistrarAlojamiento = () => {
             </div>
           </form>
         </div>
+        <Footer />
       </main>
       {isModalOpen && <Modal message={modalMessage} onClose={() => setIsModalOpen(false)} />}
+      
     </div>
   );
 };

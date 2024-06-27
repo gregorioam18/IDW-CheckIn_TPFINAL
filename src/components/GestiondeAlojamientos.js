@@ -4,6 +4,7 @@ import HotelList from './HotelList';
 import Sidebar from './Sidebar';
 import ActualizarAlojamiento from './ActualizarAlojamiento';
 import './GestiondeAlojamientos.css';
+import Footer from '../components/Footer2.js';
 
 const GestiondeAlojamientos = ({ role }) => {
   const navigate = useNavigate();
@@ -142,7 +143,9 @@ const GestiondeAlojamientos = ({ role }) => {
             onUpdateHotel={handleUpdateHotel}
           />
         )}
+        <Footer />
       </main>
+      
     </div>
   );
 };

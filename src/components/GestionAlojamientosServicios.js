@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar';
 import './GestionAlojamientoServicios.css';
+import Footer from '../components/Footer2.js';
 
 const GestionAlojamientoServicios = () => {
   const [alojamientoServicios, setAlojamientoServicios] = useState([]);
@@ -209,7 +210,9 @@ const GestionAlojamientoServicios = () => {
             ))}
           </tbody>
         </table>
+        <Footer />
       </main>
+      
     </div>
   );
 };

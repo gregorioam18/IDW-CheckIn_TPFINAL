@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Sidebar from './Sidebar'; 
 import './GestorServicios.css';
+import Footer from '../components/Footer2.js';
 
 const GestorServicios = () => {
   const [servicios, setServicios] = useState([]);
@@ -136,7 +137,9 @@ const GestorServicios = () => {
             </tbody>
           </table>
         </div>
+        <Footer />
       </main>
+      
     </div>
   );
 };
