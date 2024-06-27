@@ -8,9 +8,7 @@ function LoginRoute() {
   const navigate = useNavigate();
 
   const handleLogin = ({ username, password }) => {
-    // Validar credenciales
     if (username === 'admin' && password === 'admin') {
-      // Redirigir al usuario a la página de gestión de alojamientos
       navigate('/gestion-de-alojamientos');
     } else {
       alert('Credenciales incorrectas. Intente de nuevo.');

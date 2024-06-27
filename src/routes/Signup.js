@@ -1,3 +1,6 @@
+// En un futuro me gustaria agregarle la posibilidad de que el usuario se pueda registar
+
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import validation from './SignupValidation';
@@ -20,7 +23,7 @@ function Signup() {
         const errors = validation(values);
         setError(errors);
         if (Object.keys(errors).length === 0) {
-            // Aquí puedes enviar los datos del formulario si no hay errores
+            
             console.log("Formulario válido. Datos enviados:", values);
         }
     }

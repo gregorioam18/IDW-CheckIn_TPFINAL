@@ -9,9 +9,9 @@ body, html {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh; /* Ocupar toda la altura de la pantalla */
+  height: 100vh; 
   background: linear-gradient(135deg, #f3e5ab, #f3c76b);
-  animation: gradientMovement 20s ease infinite alternate; /* Animación de movimiento */
+  animation: gradientMovement 20s ease infinite alternate; 
 }
 
 @keyframes gradientMovement {
@@ -29,8 +29,8 @@ body, html {
   border: 1px solid #ccc;
   border-radius: 10px;
   width: 90%;
-  max-width: 400px; /* Limitar el tamaño máximo */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Añadir sombra */
+  max-width: 400px; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .login-form h2 {

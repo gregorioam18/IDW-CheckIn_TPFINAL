@@ -1,6 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
-import './Sidebar.css'; // Importa los estilos CSS específicos para Sidebar
+import './Sidebar.css'; 
 
 const Sidebar = ({ 
   role, 
@@ -10,7 +10,7 @@ const Sidebar = ({
   handleGestionAlojamientosClick, 
   handleTipoAlojamientoClick,
   handleGestionServiciosClick,
-  handleGestionAlojamientoServiciosClick // Nueva función para manejar el click en el botón de Alojamiento Servicios
+  handleGestionAlojamientoServiciosClick 
 }) => {
   const navigate = useNavigate();
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './ModalUser.css'; // Asegúrate de tener algunos estilos para el modal
+import './ModalUser.css'; 
 
 const ModalUser = ({ onClose, children }) => {
   return ReactDOM.createPortal(
@@ -12,7 +12,7 @@ const ModalUser = ({ onClose, children }) => {
         {children}
       </div>
     </div>,
-    document.getElementById('modal-root') // Asegúrate de tener un div con id 'modal-root' en tu index.html
+    document.getElementById('modal-root') 
   );
 };
 

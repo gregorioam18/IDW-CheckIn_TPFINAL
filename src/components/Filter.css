@@ -47,18 +47,17 @@
     border: 1px solid #ddd;
     border-radius: 3px;
   }
-  
-  /* Estilos para los botones */
+
   .filter-buttons {
     display: flex;
-    justify-content: flex-end; /* Alineamos los botones a la derecha */
-    margin-top: 10px; /* Añadimos un margen superior */
-    width: 100%; /* Aseguramos que los botones ocupen todo el ancho */
+    justify-content: flex-end; 
+    margin-top: 10px; 
+    width: 100%; 
   }
   
   .filter-buttons button {
-    margin-left: 10px; /* Añadimos espacio entre los botones */
-    padding: 8px 15px; /* Ajustamos el padding de los botones */
+    margin-left: 10px; 
+    padding: 8px 15px; 
     background-color: #007bff;
     color: #fff;
     border: none;
@@ -72,12 +71,11 @@
   
   @media (max-width: 600px) {
     .filter {
-      flex-direction: column; /* Cambiamos a diseño de columna en pantallas pequeñas */
-      align-items: center; /* Centramos elementos en pantallas pequeñas */
+      flex-direction: column; 
+      align-items: center; 
     }
     
     .filter-buttons {
-      justify-content: center; /* Centramos los botones en pantallas pequeñas */
+      justify-content: center; 
     }
-  }
-  
+}

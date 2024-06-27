@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import Sidebar from './Sidebar'; // Importa el componente Sidebar
+import Sidebar from './Sidebar'; 
 import './GestorServicios.css';
 
 const GestorServicios = () => {
   const [servicios, setServicios] = useState([]);
   const [formValues, setFormValues] = useState({ id: '', nombre: '' });
   const [editing, setEditing] = useState(false);
-  const navigate = useNavigate(); // Define navigate aquí
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchServicios();

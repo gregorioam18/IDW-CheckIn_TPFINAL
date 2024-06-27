@@ -1,6 +1,6 @@
 // Modal.js
 import React from 'react';
-import './Modal.css'; // Importa los estilos del modal
+import './Modal.css'; 
 
 const Modal = ({ message, onClose }) => {
   return (

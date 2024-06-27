@@ -11,7 +11,7 @@ const HotelListUser = ({ hotels }) => {
   const handleViewMore = (hotel) => {
     setSelectedHotel(hotel);
     setIsModalOpen(true);
-    setCurrentImageIndex(0); // Reset image index when opening modal
+    setCurrentImageIndex(0); 
   };
 
   const closeModal = () => {
@@ -44,7 +44,7 @@ const HotelListUser = ({ hotels }) => {
           </p>
           <p>Precio: ${hotel.price}</p>
           <p>Estado: {hotel.estado}</p>
-          <p>Servicios: {hotel.services.join(', ')}</p> {/* Display services */}
+          <p>Servicios: {hotel.services.join(', ')}</p> {/* Mostrar servicios a solucionar*/}
           <button onClick={() => handleViewMore(hotel)}>Ver más</button>
         </div>
       ))}
@@ -59,7 +59,7 @@ const HotelListUser = ({ hotels }) => {
           <p>Descripción: {selectedHotel.description}</p>
           <p>Dormitorios: {selectedHotel.bedrooms}</p>
           <p>Baños: {selectedHotel.bathrooms}</p>
-          <p>Servicios: {selectedHotel.services.join(', ')}</p> {/* Display services */}
+          <p>Servicios: {selectedHotel.services.join(', ')}</p> {/* Mostrar servicios a solucionar*/}
           {selectedHotel.images && selectedHotel.images.length > 0 && (
             <div className="modal-image-slider">
               <button className="prev" onClick={showPreviousImage}>&#10094;</button>

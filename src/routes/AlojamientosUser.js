@@ -25,7 +25,7 @@ function Servicios() {
     try {
       const response = await fetch(`http://localhost:3001/alojamientosServicios/getAlojamientoServicios/${idAlojamiento}`);
       const data = await response.json();
-      return data.map(service => service.idServicio); // Return an array of service IDs
+      return data.map(service => service.idServicio); 
     } catch (error) {
       console.error('Error fetching hotel services:', error);
       return [];
@@ -42,20 +42,20 @@ function Servicios() {
         data.map(async (hotel) => {
           const images = allImages.filter(image => image.idAlojamiento === hotel.idAlojamiento).map(image => image.RutaArchivo);
           const services = await fetchHotelServices(hotel.idAlojamiento);
-          const tipoAlojamientoParsed = parseInt(hotel.tipoAlojamiento, 10) || -1; // Assign -1 if invalid
+          const tipoAlojamientoParsed = parseInt(hotel.tipoAlojamiento, 10) || -1; 
           return {
             id: hotel.idAlojamiento,
             name: hotel.Titulo,
             latitud: hotel.Latitud,
             longitud: hotel.Longitud,
             price: hotel.PrecioPorDia,
-            images: images.length > 0 ? images : ['default_image_url.jpg'], // Use default image if no images are found
+            images: images.length > 0 ? images : ['default_image_url.jpg'], 
             description: hotel.Descripcion,
             bedrooms: hotel.CantidadDormitorios,
             bathrooms: hotel.CantidadBanios,
             estado: hotel.Estado,
-            tipoAlojamiento: tipoAlojamientoParsed, // Use parsed value
-            services: services, // Add services to hotel object
+            tipoAlojamiento: tipoAlojamientoParsed, 
+            services: services, 
           };
         })
       );

@@ -21,9 +21,8 @@ const HotelCard = ({ hotel, onDeleteHotel, onUpdateHotel }) => {
   const handleUpdate = () => {
     const updatedHotel = {
       ...hotel,
-      name: 'Título actualizado', // Asumiendo que 'name' debería ser el título actualizado
-      price: hotel.price + 10, // Asumiendo que 'price' es el precio por día
-      // No modificamos 'rating' en esta parte si decidimos quitarlo
+      name: 'Título actualizado', 
+      price: hotel.price + 10, 
     };
     onUpdateHotel(hotel.id, updatedHotel);
   };

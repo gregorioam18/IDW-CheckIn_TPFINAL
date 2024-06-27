@@ -15,8 +15,7 @@ const Login = ({ onLogin }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Aquí puedes realizar la lógica de autenticación, por ejemplo, una llamada a tu API
-    // Por ahora, simplemente llamaremos a la función onLogin con los datos ingresados
+    // Se podria agregar el llamado o manipulacion de la bd aca
     onLogin({ username, password });
   };
 

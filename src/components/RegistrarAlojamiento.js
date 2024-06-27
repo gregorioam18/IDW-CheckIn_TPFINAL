@@ -1,25 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import './RegistrarAlojamiento.css'; // Importa el archivo CSS para los estilos del formulario
-import Sidebar from './Sidebar'; // Importamos el componente Sidebar
-import Modal from './Modal'; // Importamos el componente Modal
-import obtenerCiudadCoordenadas from './obtenerCiudadCoordenadas'; // Importa la función para obtener coordenadas
+import './RegistrarAlojamiento.css'; 
+import Sidebar from './Sidebar'; 
+import Modal from './Modal'; 
+import obtenerCiudadCoordenadas from './obtenerCiudadCoordenadas'; 
 
 const RegistrarAlojamiento = () => {
   const navigate = useNavigate();
   const [formValues, setFormValues] = useState({
     name: '',
-    location: '', // Campo para la ciudad
+    location: '', 
     price: '',
     description: '',
     bedrooms: '',
     bathrooms: '',
     estado: 'Disponible',
-    tipoAlojamiento: '', // Agregamos el tipo de alojamiento
+    tipoAlojamiento: '', 
   });
-  const [tiposAlojamiento, setTiposAlojamiento] = useState([]); // Estado para almacenar los tipos de alojamiento
-  const [isModalOpen, setIsModalOpen] = useState(false); // Estado para controlar la visibilidad del modal
-  const [modalMessage, setModalMessage] = useState(''); // Estado para el mensaje del modal
+  const [tiposAlojamiento, setTiposAlojamiento] = useState([]);
+  const [isModalOpen, setIsModalOpen] = useState(false); 
+  const [modalMessage, setModalMessage] = useState(''); 
 
   useEffect(() => {
     fetchTiposAlojamiento();
@@ -64,7 +64,7 @@ const RegistrarAlojamiento = () => {
           TipoAlojamiento: parseInt(formValues.tipoAlojamiento),
           Latitud: parseFloat(latitud),
           Longitud: parseFloat(longitud),
-          TipoAlojamiento: parseInt(formValues.tipoAlojamiento), // Convertimos a número el tipo de alojamiento
+          TipoAlojamiento: parseInt(formValues.tipoAlojamiento), 
           PrecioPorDia: parseFloat(formValues.price),
           CantidadDormitorios: parseInt(formValues.bedrooms),
           CantidadBanios: parseInt(formValues.bathrooms),
@@ -73,8 +73,8 @@ const RegistrarAlojamiento = () => {
       });
 
       const data = await response.json();
-      console.log('Response status:', response.status); // Log del estado de la respuesta
-      console.log('Response data:', data); // Log de la respuesta completa
+      console.log('Response status:', response.status); 
+      console.log('Response data:', data); 
 
       if (response.ok) {
         console.log('Alojamiento creado correctamente');
@@ -86,7 +86,7 @@ const RegistrarAlojamiento = () => {
         // Mostrar modal de error con detalles del mensaje de error
         setModalMessage(`Error al crear el alojamiento: ${data.message || response.statusText}`);
       }
-      setIsModalOpen(true); // Mostrar el modal después de manejar la respuesta
+      setIsModalOpen(true); 
     } catch (error) {
       console.error('Error al crear el alojamiento:', error);
       // Mostrar modal de error
@@ -98,7 +98,7 @@ const RegistrarAlojamiento = () => {
   const clearForm = () => {
     setFormValues({
       name: '',
-      location: '', // Limpiar el campo de la ciudad
+      location: '', 
       price: '',
       description: '',
       bedrooms: '',

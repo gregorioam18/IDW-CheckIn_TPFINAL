@@ -10,7 +10,7 @@ const AdministradordeImagenes = ({ role }) => {
   const [alojamientos, setAlojamientos] = useState([]);
   const [selectedAlojamiento, setSelectedAlojamiento] = useState('');
   const [images, setImages] = useState([]);
-  const IMGBB_API_KEY = 'fe710239ec2669c60deafe46f166c86d'; // Reemplaza con tu API key de ImgBB
+  const IMGBB_API_KEY = 'fe710239ec2669c60deafe46f166c86d';
 
   useEffect(() => {
     const fetchAlojamientos = async () => {
